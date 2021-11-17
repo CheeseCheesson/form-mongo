@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wpapper {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(227, 234, 248);
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    background-color: rgb(190, 192, 199);
+    padding: 120px 150px;
+}
+.name {
+}
+.email {
+}
+label {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px;
+}
+input{
+    padding: 11px;
+    width: 380px;
+    font-size: 24px;
+}
+button{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 175px;
+    padding: 10px;
+    background-color: rgb(253, 211, 120);
+}
+button:active{
+    background-color: rgb(221, 31, 31);
+    transition: 0.21s ease-in-out;
+}

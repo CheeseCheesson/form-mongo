@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Form example 1</title>
+  </head>
+  <body>
+    <div class="wpapper">
+      <div class="container">
+        <form
+          action="/api/users"
+          name="formNamePassword"
+          class="form"
+          data-form="myDataForm"
+          method="POST"
+          autocomplete
+        >
+          <label class="form-name" for="userName">Введите Имя</label>
+          <input
+            type="text"
+            class="input-form"
+            id="userName"
+            name="userName"
+            autocomplete="username"
+          />
+          <label class="form-name" for="password">Введите password</label>
+          <input
+            type="password"
+            class="input-form"
+            id="userPassword"
+            name="userPassword"
+            autocomplete="current-password"
+          />
+          <label class="form-name" for="age">Введите возраст</label>
+          <input
+            type="number"
+            min="0"
+            max="150"
+            class="input-form"
+            id="userAge"
+            name="userAge"
+          />
+
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
